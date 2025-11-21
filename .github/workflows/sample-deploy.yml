@@ -20,6 +20,12 @@ jobs:
       run: |
         docker build -f scripts/sample-deploy/Dockerfile -t my-python-app:latest .
 
+    - name: create container and run
+      run: |
+         echo 'Display out'
+         docker run -rm my-python-app:latest
+        
+
     # Save image to a tar file
     - name: Save image as artifact
       run: |
