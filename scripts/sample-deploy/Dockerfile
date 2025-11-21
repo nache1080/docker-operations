@@ -10,7 +10,7 @@ COPY scripts/sample-deploy/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy your Python script(s) into the image
-COPY scripts/sample-deploy/app.py
+COPY scripts/sample-deploy/app.py .
 
 # Run your script by default
 # Replace "app.py" with your script name
