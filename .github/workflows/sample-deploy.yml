@@ -18,7 +18,7 @@ jobs:
     # Build Docker image
     - name: Build image
       run: |
-        docker build -t my-python-app:latest .
+        docker build -f scripts/sample-deployment/Dockerfile -t my-python-app:latest .
 
     # Save image to a tar file
     - name: Save image as artifact
