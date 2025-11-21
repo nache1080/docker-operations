@@ -23,7 +23,7 @@ jobs:
     - name: create container and run
       run: |
          echo 'Display out'
-         docker run -rm my-python-app:latest
+         docker run --rm my-python-app:latest
         
 
     # Save image to a tar file
