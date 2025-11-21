@@ -6,11 +6,11 @@ WORKDIR /app
 
 # Copy requirements file if you have one (optional)
 # If you don't have requirements.txt, you can remove these two lines
-COPY requirements.txt .
+COPY scripts/sample-deploy/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy your Python script(s) into the image
-COPY . .
+COPY scripts/sample-deploy/app.py
 
 # Run your script by default
 # Replace "app.py" with your script name
